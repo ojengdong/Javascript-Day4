@@ -40,21 +40,3 @@ body {
 .box.hovered {
   border: 2px dashed #333;
 }
-
-
-.ball{
-  background-color: rgb(245, 230, 99);
-  border: 10px solid rgba(136, 136, 136, .5);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.ball:hover {
-  cursor: pointer;
-  border-width: 20px;
-}
-
-.ball:avtive {
-  background-color: rgba(168, 218, 220, 1);
-}
