@@ -76,6 +76,8 @@ box.forEach(function(b){
 //   box[3].appendChild(image);
 // });
 
+
+// dragdrop 마우스 이벤트
 const ball = document.querySelector('.ball');
 
 ball.onmousedown = function(event){
