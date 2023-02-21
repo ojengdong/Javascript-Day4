@@ -92,4 +92,19 @@ ball.onmousedown = function(event){
         ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
         ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
     }
+
+    // 포인터 아래로 공을 움직인다.
+    moveAt(event.pageX, event.pageY);
+
+    function onMouseMove(event){
+        moveAt(event.pageX, event.pageY);
+    }
+
+    // 2. mousemove로 공을 움직인다.
+    document.addEventListener('mousemove', onMouseMove);
+
+    // 3.공을 드롭하고, 불필요한 핸들러를 제거한다.
+    ball.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+    }
 }
